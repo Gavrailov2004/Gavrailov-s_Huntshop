@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primaryColor: #c8bc80;
+    --secondaryColor: #50764d;
+    --borderColor: #0000;
+    --inputColor: #33ccff;
+    --successColor: #99ff33;
+    --failureColor: #e60000;
+}
+html{
+    font-size: 90%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-image: url(images/body1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.register_container{
+    width: 580px;
+    height: 800px;
+    padding: 0 1rem;
+    border-radius: 1px;
+    border: 3px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    background:var(--secondaryColor);
+    overflow: hidden;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    background: var(--primaryColor);
+    content: '';
+    height: 850px;
+    width: 1050px;
+    border-radius: 50%;
+    z-index: 2;
+    top: -10%;
+}
+.titleDiv{
+    position: relative;
+    width: 100%;
+    margin: 10px auto 5px;
+    text-align: center;
+    transform: translateY(-3rem);
+    z-index: 1000;
+}
+.title{
+    color: var(--secondaryColor);
+    font-weight: 900;
+    font-size: 2.7rem;
+}
+.row{
+    display: grid;
+    position: relative;
+    gap: 1rem;
+    z-index: 1000;
+    transform: translateY(-1rem);
+}
+label{
+    display: block;
+    font-size: 18px;
+}
+input{
+    width: 300px;
+    background: var(--secondaryColor);
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    padding: .5rem;
+    border-radius: 3px;
+}
+::placeholder{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.371);
+}
+#submitBtn{
+    cursor: pointer;
+}
+#submitBtn:hover{
+    background-color: rgb(74, 255, 18);
+}
+.registerLink{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
